@@ -1,0 +1,7 @@
+1. Start with an unsorted list.
+2. Select an element from the list (usually the first or last element in the list)I.e.
+3. Compare every element in the list to the pivot. 
+4. If the value is less than the pivot, place in right of the pivot value. If the value is more than the pivot, place left of the pivot value.
+5. Select a pivot from the values left of the original pivot to be the new pivot. For all values left of the new pivot and to the right of the new pivot up to the first pivot, repeat step 4. 
+6. Repeat step 5 until all values to the right are sorted. 
+7. Repeat step 5 to the right of the original pivot until all sorted. 

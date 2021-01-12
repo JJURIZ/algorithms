@@ -1,0 +1,22 @@
+1. Start with a list of items. 
+2. Take the length of the entire list and divide in half.
+3. Divide each of the new lists in half until each element stands alone. 
+4. Combine the individual elements in pairs, placing the smallest element first.
+I.e. if there are 10 elements, look at elements 1 and 2. If element 2 = 10 and element 1 = 15, elements 1 and 2 switch place. 
+Continue for all elements. 
+We now have the entire list sorted in pairs. 
+---Next we merge the first and second lists back together. 
+6. Looking at the first element in each list, merge the lowest value from the two lists.
+7. Restart the sequence and merge the lowest value from the two lists. Repeat until only one list of 4 items remains. Repeat for all lists.
+8. Now there are lists of 4 items. Repeat the step above by comparing two lists of 4 items. Only looking at the smallest item in each list, compare and place the smallest of the two into a new list. Repeat this step until you have a list of 8 sorted items.
+9. Repeat steps until entire list is sorted. 
+
+With values:
+
+Given an array [3,7,9,1,8,4,5,2,6]
+1. [3,7,9,1,8][4,5,2,6]
+2. [3,7,9][1,8][4,5][2,6]
+3. [3,7][9][1,8][4,5][2,6]
+4. [3,7,9] [1,4,5,8] [2,6]
+5. [1,3,4,5,7,8][2,6]
+6. [1,2,3,4,5,6,7,8,9]
